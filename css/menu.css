@@ -1,0 +1,59 @@
+.boton1 {
+    background-color: #AAFFC3;
+    border: none;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.boton1:hover span {
+    padding-right: 180px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boton1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.boton1 span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.boton1:hover span:after {
+    content: var(--texto-hover); /*Permite mostrar diferentes contenidos*/
+    opacity: 1;
+    right: 0;
+}
+
+.boton1.texto1 {
+    --texto-hover: "CV personal";
+}
+
+.boton1.texto2 {
+    --texto-hover: "Historia de la web";
+}
+
+.boton1.texto3 {
+    --texto-hover: "Informacion personal";
+}
+
+.boton1.texto4 {
+    --texto-hover: "Paises";
+}
+
+.boton1.texto5 {
+    --texto-hover: "Guia turistica";
+}
